@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="X-UA-Compatible" content="IE=7">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DISCA</title>
+  <link rel="shortcut icon" href="../images/icon/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="../images/icon/apple-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Kalam:wght@300;400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css" />
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/select2-bootstrap-5-theme@1.3.0/dist/select2-bootstrap-5-theme.min.css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/dataTables.bootstrap5.min.css">
+
+  <link rel="stylesheet" href="https://unpkg.com/dropzone@5/dist/min/dropzone.min.css" type="text/css" />
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/dashboard.css">
+  
+</head>
+
+<body>
+
+  <main class="main-content" id="main">
+    <div class="di__dashboard di__forum_dashboard d-flex">
+      <aside class="p-3 bg-white di__dashboard-sidebar min-vh-100">
+        <div class="d-flex align-items-center di__user di__user_status di__user_status--live">
+          <a href="#" class="d-block">
+            <div class="d-flex align-items-center text-decoration-none ms-3 ">
+              <div class="img-wrapper me-2">
+                <img src="../images/icon/user_img.png" alt="" width="55" height="55" class="rounded-circle bg-primary">
+              </div>
+              <p class="mb-0 tertiary-color">
+                <strong>David John</strong>
+              </p>
+            </div>
+          </a>
+        </div>
+        <ul class="nav nav-pills flex-column mt-3 px-1">
+          <li class="nav-item">
+            <a href="chat.html" class="nav-link text-xs fw-medium tertiary-color mb-1" aria-current="page">
+              Live Chat
+            </a>
+          </li>
+          <li class="inner-dropdown">
+            <a href="discussion.html" class="nav-link text-xs fw-medium tertiary-color mb-1">
+              Discussion Board
+            </a>
+            <span class="d-inline-block dropdown-arrow"><img src="../images/icon/right-arrow.svg" alt=""
+                class="in-svg"></span>
+            <ul class="ps-4">
+              <li>
+                <a href="#" class="nav-link text-xs fw-medium tertiary-color mb-1">
+                  General Update Board
+                </a>
+              </li>
+              <li>
+                <a href="#" class="nav-link text-xs fw-medium tertiary-color mb-1">
+                  Training Chatters
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="forum-add-topic.html" class="nav-link text-xs fw-medium tertiary-color mb-1 active">
+              Add new topic
+            </a>
+          </li>
+        </ul>
+        <hr class="bg-grey opacity-100">
+        <ul class="nav nav-pills flex-column mt-4 px-1">
+          <li class="nav-item">
+            <p class="primary-color text-xs fw-medium mb-3 ms-2 ps-1">
+              Topics Following
+            </p>
+          </li>
+
+          <li>
+            <a href="#" class="nav-link text-xs fw-medium tertiary-color mb-1">
+              Topic Name
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link text-xs fw-medium tertiary-color mb-1">
+              Topic Name
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link text-xs fw-medium tertiary-color mb-1">
+              Topic Name
+            </a>
+          </li>
+        </ul>
+        <hr class="bg-grey opacity-100">
+        <div class="d-flex align-items-center justify-content-center gap-3 mt-3">
+          <a href="" class="btn di__sidebar-btn text-xs fw-medium lh-base">Logout</a>
+          <a href="" class="btn di__sidebar-btn text-xs fw-medium lh-base"><img src="../images/icon/border-user.svg"
+              alt="" height="15" width="15" class="me-1">Account</a>
+
+        </div>
+      </aside>
+      <div class="di__dashboard-content flex-grow-1">
+        <div class="di__header">
+          <div class="di__toogle-sidebar d-lg-none">
+            <p class="text-small mb-0 text-white fw-medium">MENU</p>
+          </div>
+          <div class="di__dashboard_search d-none d-lg-block">
+            <input class="form-control" id="di-search" type="search" aria-label="Search" placeholder="Search">
+          </div>
+          <div class="di__dashboard_logo">
+            <img src="../images/Logo.svg" alt="" width="156">
+          </div>
+          <div class="d-flex align-items-center gap-3">
+            <div class="position-relative">
+              <div class="p-2 rounded rounded-circle bg-opacity-75 bg-light cursor-pointer di-search_icon d-lg-none">
+                <img src="../images/icon/search.svg" alt="">
+              </div>
+              <div class="di__dashboard_search di__dashboard_search--mobile d-none">
+                <input class="form-control" id="di-search" type="search" aria-label="Search" placeholder="Search">
+              </div>
+            </div>
+            <div class="di__notification di__notification--new">
+              <img src="../images/icon/Notification.svg" alt="" class="cursor-pointer">
+              <div class="di__notification_pannel">
+                <div class="di__notification_heder d-flex align-items-end justify-content-between">
+                  <p class="text-md mb-0 flex-grow-1">Notification</p>
+                  <div class="close me-2"><img src="../images/icon/close.svg" alt=""></div>
+                </div>
+                <div class="di__notification_content">
+                  <div class="di__notification_message di__notification_message--new d-flex align-items-center">
+                    <div class="di__notification_image me-3 w-auto">
+                      <img src="../images/icon/user_img.png" alt="" width="48" height="48"
+                        class="rounded-circle bg-primary">
+                    </div>
+                    <div class="flex-grow-1">
+                      <p class="di__notification_text mb-0">
+                        <strong class="fw-smedium">Tom Jones</strong> reply to your comment
+                      </p>
+                      <span class="di__notification_time d-block">
+                        3 min ago
+                      </span>
+                    </div>
+                  </div>
+                  <div class="di__notification_message d-flex align-items-center">
+                    <div class="di__notification_image me-3 w-auto">
+                      <img src="../images/icon/user_img.png" alt="" width="48" height="48"
+                        class="rounded-circle bg-primary">
+                    </div>
+                    <div class="flex-grow-1">
+                      <p class="di__notification_text mb-0">
+                        <strong class="fw-smedium">Tom Jones</strong> reply to your comment reply to your comment
+                      </p>
+                      <span class="di__notification_time d-block">
+                        3 min ago
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <form action="">
+          <div class="di__dashboard_main mt-4 pt-3">
+            <div class="di__form_heading">
+              <h5 class="mb-0 text-black">Forum Account Details</h5>
+            </div>
+            <div class="px-1 px-xl-5 mx-2">
+              <div class="di__form">
+                <div class="row gy-3 gy-md-4 gx-5 align-items-end">
+                  <div class="col-12">
+                    <div class="d-flex gap-4 align-items-center">
+                      <span class="position-relative"><input type="file" class="w-100 opacity-0 z-1 h-100 position-absolute cursor-pointer"><span class="d-block"><img src="../images/icon/camera.svg" alt="" class="in-svg"></span></span>
+                      <span><img src="../images/icon/user_img.png" alt="" width="127" height="127" class="bg-primary rounded-circle"></span>
+                      <span><img src="../images/icon/delete.svg" alt="" width="22"></span>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 me-0 me-md-2">
+                    <label for="first-name" class="form-label">Name</label>
+                    <input type="text" class="form-control" placeholder="Name" aria-label="First name" id="first-name">
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <label for="first-name" class="form-label">Username</label>
+                    <input type="text" class="form-control" placeholder="Username" aria-label="First name"
+                      id="first-name">
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="text" class="form-control" placeholder="Email" aria-label="email" id="email">
+                  </div>
+                  <div class="col-12">
+                    <div class="row gy-3 gy-md-4 gx-5 align-items-end">
+                      <div class="col-12 col-md-6">
+                        <label for="inputaddress" class="form-label">Address</label>
+                        <input type="text" class="form-control" placeholder="Street" aria-label="Street"
+                          id="inputaddress">
+                      </div>
+                      <div class="col-12 col-md-6">
+                        <input type="text" class="form-control" placeholder="City/Town" aria-label="City"
+                          id="inputaddress">
+                      </div>
+                      <div class="col-12 col-md-6">
+                        <input type="text" class="form-control" placeholder="County" aria-label="County"
+                          id="inputaddress">
+                      </div>
+                      <div class="col-12 col-md-6">
+                        <input type="text" class="form-control" placeholder="Post Code" aria-label="Post"
+                          id="inputaddress">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <label for="email" class="form-label">Company</label>
+                    <input type="text" class="form-control" placeholder="Company" aria-label="email" id="email">
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <label for="mobile" class="form-label">Mobile Number</label>
+                    <div class="row gy-4 gx-3 align-items-end">
+                      <div class="col di__telephone">
+                        <select id="mobiler" class="form-select di__select">
+                          <option selected>UK +44</option>
+                          <option>...</option>
+                        </select>
+                      </div>
+                      <div class="col">
+                        <input type="text" class="form-control" placeholder="123466899" aria-label="Mobile Number"
+                          id="mobile-number">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <label for="email" class="form-label">Which part of the Sector do you represents?</label>
+                    <input type="text" class="form-control" placeholder="Sector" aria-label="email" id="email">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="di__form_heading border-top border-bottom-0 mt-5">
+              <h5 class="mb-0 text-black">Forum Boards</h5>
+            </div>
+            <div class="px-1 px-xl-5 mx-2">
+              <div class="di__form">
+                <div class="row gy-3 gy-md-4 gx-5 align-items-end">
+                  <div class="col-12">
+                    <div class="di__forum_board_list di__light-bg">
+                      <div class="ps-md-4 ps-2">
+                        <p class="primary-color text-xs fw-smedium py-3 mb-0">
+                          Care Home Private
+                        </p>
+                      </div>
+                      <div class="ps-md-4 ps-2 border-top">
+                        <p class="primary-color text-xs fw-smedium py-3 mb-0">
+                          Care Homes
+                        </p>
+                      </div>
+                      <div class="ps-md-4 ps-2 border-top">
+                        <p class="primary-color text-xs fw-smedium py-3 mb-0">
+                          Domiciliary Care
+                        </p>
+                      </div>
+                      <div class="ps-md-4 ps-2 border-top">
+                        <p class="primary-color text-xs fw-smedium py-3 mb-0">
+                          Domiciliary Care Private
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="di__form_heading border-top border-bottom-0 mt-5">
+              <h5 class="mb-0 text-black">Reset Password</h5>
+            </div>
+            <div class="px-1 px-xl-5 mx-2">
+              <div class="di__form">
+                <div class="row gy-3 gy-md-4 gx-5 align-items-end">
+                  <div class="col-12 col-md-6">
+                    <label for="password" class="form-label mb-2">Current Password</label>
+                    <span class="position-relative">
+                      <input type="password" class="form-control password" placeholder="" aria-label="password">
+                      <div class="di__password_toggle">
+                        <img src="../images/icon/eye-slash.svg" alt="" class="di__password_view">
+                        <img src="../images/icon/pass-view.svg" alt="" class="di__password_hide">
+                    </div>
+                    </span>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <label for="password" class="form-label mb-2">New Password</label>
+                    <span class="position-relative">
+                      <input type="password" class="form-control password" placeholder="" aria-label="password">
+                      <div class="di__password_toggle">
+                        <img src="../images/icon/eye-slash.svg" alt="" class="di__password_view">
+                        <img src="../images/icon/pass-view.svg" alt="" class="di__password_hide">
+                    </div>
+                    </span>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <label for="password" class="form-label mb-2">Confirm New Password</label>
+                    <span class="position-relative">
+                      <input type="password" class="form-control password" placeholder="" aria-label="password">
+                      <div class="di__password_toggle">
+                        <img src="../images/icon/eye-slash.svg" alt="" class="di__password_view">
+                        <img src="../images/icon/pass-view.svg" alt="" class="di__password_hide">
+                    </div>
+                    </span>
+                  </div>
+                  <div class="col-12">
+                    <a href="" class="btn btn-grey tertiary-color">Reset Password</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="di__form_heading border-top border-bottom-0 mt-5 pb-3 mb-0">
+              <h5 class="mb-0 text-black">Enable 2-Factor Authentication</h5>
+            </div>
+            <div class="px-1 px-xl-5 mx-2">
+              <div class="di__form">
+                <div class="row gy-3 gy-md-4 gx-5 align-items-end">
+                  <div class="col-12 col-md-6">
+                    <label for="password" class="form-label mb-2">Current Password</label>
+                    <span class="position-relative">
+                      <input type="password" class="form-control password" placeholder="" aria-label="password">
+                      <div class="di__password_toggle">
+                        <img src="images/icon/eye-slash.svg" alt="" class="di__password_view">
+                        <img src="images/icon/pass-view.svg" alt="" class="di__password_hide">
+                    </div>
+                    </span>
+                  </div>
+                  <div class="col-12">
+                    <a href="" class="btn btn-light primary-color">Enable</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="di__form_heading border-top border-bottom-0 mt-5 pb-3 mb-0">
+              <h5 class="mb-4 text-black">Notifications</h5>
+            </div>
+            <div class="px-1 px-xl-5 mx-2 pb-3">
+              <div class="di__form">
+                <div class="row gy-3 gy-md-4 gx-5 align-items-end">
+                  <div class="col-12 col-md-9">
+                    <div class="d-flex justify-content-between align-items-center border-bottom border-1 pb-3">
+                      <label for="password" class="form-label mb-0">Email notifications</label>
+                      <span class="di__custom_toggle d-flex">
+                        <input type="checkbox" id="switch" /><label for="switch"></label>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-9">
+                    <div class="d-flex justify-content-between align-items-center border-bottom border-1 pb-3">
+                      <label for="password" class="form-label mb-0">Mobile app</label>
+                      <span class="di__custom_toggle d-flex">
+                        <input type="checkbox" id="mobile-switch" /><label for="mobile-switch"></label>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="di__form_heading border-top border-bottom-0 mt-5  pb-3 mb-0">
+            </div>
+            <div class="px-1 px-xl-5 mx-2">
+              <a href="" class="btn">Save Changes</a>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+  <script src="https://cdn.datatables.net/1.13.6/js/dataTables.bootstrap5.min.js"></script>
+  <script src="https://unpkg.com/dropzone@5/dist/min/dropzone.min.js"></script>
+  <script src="https://cdn.ckeditor.com/ckeditor5/40.0.0/classic/ckeditor.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+
+</html>

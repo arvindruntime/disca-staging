@@ -1,0 +1,104 @@
+@font-face {
+    font-family: 'Agenda';
+    src: url('Agenda-LightItalic.eot');
+    src: url('Agenda-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('Agenda-LightItalic.woff2') format('woff2'),
+        url('Agenda-LightItalic.woff') format('woff'),
+        url('Agenda-LightItalic.ttf') format('truetype'),
+        url('Agenda-LightItalic.svg#Agenda-LightItalic') format('svg');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Agenda';
+    src: url('Agenda-Light.eot');
+    src: url('Agenda-Light.eot?#iefix') format('embedded-opentype'),
+        url('Agenda-Light.woff2') format('woff2'),
+        url('Agenda-Light.woff') format('woff'),
+        url('Agenda-Light.ttf') format('truetype'),
+        url('Agenda-Light.svg#Agenda-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Agenda';
+    src: url('Agenda-RegularItalic.eot');
+    src: url('Agenda-RegularItalic.eot?#iefix') format('embedded-opentype'),
+        url('Agenda-RegularItalic.woff2') format('woff2'),
+        url('Agenda-RegularItalic.woff') format('woff'),
+        url('Agenda-RegularItalic.ttf') format('truetype'),
+        url('Agenda-RegularItalic.svg#Agenda-RegularItalic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Agenda';
+    src: url('Agenda-Medium.eot');
+    src: url('Agenda-Medium.eot?#iefix') format('embedded-opentype'),
+        url('Agenda-Medium.woff2') format('woff2'),
+        url('Agenda-Medium.woff') format('woff'),
+        url('Agenda-Medium.ttf') format('truetype'),
+        url('Agenda-Medium.svg#Agenda-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Agenda';
+    src: url('Agenda-Semibold.eot');
+    src: url('Agenda-Semibold.eot?#iefix') format('embedded-opentype'),
+        url('Agenda-Semibold.woff2') format('woff2'),
+        url('Agenda-Semibold.woff') format('woff'),
+        url('Agenda-Semibold.ttf') format('truetype'),
+        url('Agenda-Semibold.svg#Agenda-Semibold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Agenda';
+    src: url('Agenda-MediumItalic.eot');
+    src: url('Agenda-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('Agenda-MediumItalic.woff2') format('woff2'),
+        url('Agenda-MediumItalic.woff') format('woff'),
+        url('Agenda-MediumItalic.ttf') format('truetype'),
+        url('Agenda-MediumItalic.svg#Agenda-MediumItalic') format('svg');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Agenda';
+    src: url('Agenda-Bold.eot');
+    src: url('Agenda-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Agenda-Bold.woff2') format('woff2'),
+        url('Agenda-Bold.woff') format('woff'),
+        url('Agenda-Bold.ttf') format('truetype'),
+        url('Agenda-Bold.svg#Agenda-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Agenda';
+    src: url('Agenda-Regular.eot');
+    src: url('Agenda-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Agenda-Regular.woff2') format('woff2'),
+        url('Agenda-Regular.woff') format('woff'),
+        url('Agenda-Regular.ttf') format('truetype'),
+        url('Agenda-Regular.svg#Agenda-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

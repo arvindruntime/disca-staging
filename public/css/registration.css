@@ -1,0 +1,265 @@
+.di__bg_section {
+    padding: 75px 92px;
+    border-radius: 25px;
+}
+
+.di__form_heading {
+    padding: 40px 53px 23px;
+    border-bottom: 1px solid #E5E5E5;
+    margin-bottom: 34px;
+}
+
+.di__form {
+    padding: 0 55px;
+}
+
+.di__carehome {
+    padding: 30px 40px;
+    border-radius: 15px;
+}
+
+@media (max-width: 991px){
+    .di__form {
+        padding: 0 20px;
+    }
+    .di__form_heading{
+        padding: 30px 20px;
+    }
+}
+
+
+/*Time select*/
+.di__time_input .timepicker {
+    background: transparent;
+    border: transparent;
+    color: #ffffff;
+    font-size: 13px;
+    width: 100%;
+}
+
+.di__time_input .timepicker::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 13px;
+}
+
+.di__time_input .timepicker:focus-visible {
+    outline: 0;
+}
+
+.ui-timepicker-standard {
+    background-color: rgb(0 0 0 / 70%);
+    border: 1px solid rgba(0, 163, 173);
+    border-radius: 10px;
+    padding-top: 5px;
+    width: 60px !important;
+}
+
+.ui-timepicker-standard a {
+    color: #ffffff;
+    font-family: 'Inter';
+    font-weight: 300;
+    font-size: 13px;
+    border: 0 solid transparent !important;
+    transition: all 0.5s;
+}
+
+.ui-timepicker-standard .ui-state-hover {
+    background-color: transparent;
+    border: 0;
+}
+
+.di__time_input {
+    width: 40px;
+}
+
+.di__duration_select{
+    width: 55px;
+}
+
+ul.ui-timepicker-viewport {
+    width: 65px !important;
+}
+
+.ui-timepicker-standard .ui-menu-item {
+    width: 53px !important;
+}
+
+.ui-timepicker {
+    width: 60px !important;
+}
+
+
+/*duration-select*/
+
+.di__duration_select .select2-container--bootstrap-5 .select2-selection--single {
+    background: none;
+    box-shadow: none;
+    padding: 0;
+    min-height: auto;
+}
+
+.di__duration_select .select2-container--bootstrap-5 .select2-selection--single .select2-selection__rendered .select2-selection__placeholder {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 13px
+}
+
+.di__duration_select .select2-container--bootstrap-5.select2-container--focus .select2-selection, .di__duration_select .select2-container--bootstrap-5.select2-container--open .select2-selection {
+    background: none !important;
+    box-shadow: none !important;
+}
+
+.di__duration_select .select2-container--bootstrap-5 .select2-selection--single .select2-selection__rendered {
+    color: #ffffff;
+    font-size: 13px;
+}
+
+.di__select_duration {
+    background-color: rgba(0, 0, 0, 0.7) !important;
+    border: 1px solid rgba(0, 163, 173, 1) !important;
+    border-radius: 10px !important;
+    width: 70px !important;
+    text-align: center;
+}
+
+.select2-container--bootstrap-5 .di__select_duration.select2-dropdown .select2-results__options .select2-results__option {
+    color: #ffffff;
+    font-family: 'Inter';
+    font-weight: 300;
+    font-size: 13px;
+    padding: 5px;
+}
+
+.select2-container--bootstrap-5 .di__select_duration.select2-dropdown .select2-results__options .select2-results__option.select2-results__option--highlighted {
+    color: #00a3ad;
+    background: none;
+}
+
+.di__carehome .table>:not(caption)>*>* {
+    padding: 12px 10px;
+    white-space: nowrap;
+}
+
+/*duration-time arrow*/
+.di__time_input, .di__duration_select {
+    position: relative;
+}
+
+.di__time_input::after, .di__duration_select::after {
+    content: '';
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNSIgaGVpZ2h0PSIxMiIgdmlld0JveD0iMCAwIDUgMTIiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxnIGNsaXAtcGF0aD0idXJsKCNjbGlwMF8yMjQ4XzgzOCkiPgo8cGF0aCBkPSJNMi41IDAuOTI5OTMyTDQuNjY1MDYgNC42Nzk5M0gwLjMzNDkzNkwyLjUgMC45Mjk5MzJaIiBmaWxsPSJ3aGl0ZSIvPgo8cGF0aCBkPSJNMi41IDExLjkyOTlMMC4zMzQ5MzYgOC4xNzk5M0w0LjY2NTA2IDguMTc5OTNMMi41IDExLjkyOTlaIiBmaWxsPSJ3aGl0ZSIvPgo8L2c+CjxkZWZzPgo8Y2xpcFBhdGggaWQ9ImNsaXAwXzIyNDhfODM4Ij4KPHJlY3Qgd2lkdGg9IjUiIGhlaWdodD0iMTEiIGZpbGw9IndoaXRlIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwIDAuOTI5OTMyKSIvPgo8L2NsaXBQYXRoPgo8L2RlZnM+Cjwvc3ZnPgo=");
+    background-repeat: no-repeat;
+    width: 5px;
+    height: 12px;
+    position: absolute;
+    right: -5px;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0.5;
+}
+.di__time_input.active::after, .di__duration_select.active::after {
+    opacity: 1;
+}
+
+.di__t_d-wrapper{
+    gap: 12px;
+}
+
+.di__time--hover:hover .di__time_input .timepicker::placeholder, .di__time--hover:hover .di__duration_select .select2-container--bootstrap-5 .select2-selection--single .select2-selection__rendered .select2-selection__placeholder, .di__time--hover:hover .di__time_input::after, .di__time--hover:hover .di__duration_select::after {
+    color: #ffffff;
+    opacity: 1;
+}
+.di__time--hover:hover{
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.select2-container--bootstrap-5 .select2-dropdown{
+    border-color: #E4E9EF;
+}
+
+/*professional*/
+
+.di__time_input--grey .timepicker, .di__time_input--grey .timepicker::placeholder {
+    color: grey;
+    font-size: 12px;
+}
+
+.di__time_input--grey::after, .di__duration_select--grey::after {
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNCIgaGVpZ2h0PSIxMSIgdmlld0JveD0iMCAwIDQgMTEiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0yLjAyNDY5IDAuNTQyMjM2TDMuOTMxOTYgMy44NDU3MUgwLjExNzQzMkwyLjAyNDY5IDAuNTQyMjM2WiIgZmlsbD0iI0E1QjRDQiIvPgo8cGF0aCBkPSJNMi4wMjQ2OSAxMC4yMzI0TDAuMTE3NDMyIDYuOTI4OTVMMy45MzE5NiA2LjkyODk2TDIuMDI0NjkgMTAuMjMyNFoiIGZpbGw9IiNBNUI0Q0IiLz4KPC9zdmc+Cg==");
+    right: -1px;
+}
+
+.di__fee_structure .di__fee_card {
+    padding: 9px;
+    background-color: #fff;
+    border-radius: 7px;
+}
+
+.di__fee_structure .di__rate {
+    flex: 0 0 90px;
+}
+
+.di__fee_structure .di__time_select {
+    flex: 0 0 200px;
+}
+
+.di__fee_structure .di__liv-in {
+    flex: 0 0 145px;
+}
+
+.di__fee_structure .form-label, .di__fee_structure .form-check-label {
+    font-size: 7px !important;
+    font-weight: 400;
+    color: #667488;
+}
+
+.di__rate-wrapper {
+    flex: 0 0 66px;
+    max-width: 66px;
+}
+
+.di__time-wrapper {
+    flex: 0 0 105px;
+}
+
+.di__plus {
+    width: 40px;
+    height: 40px;
+    border-radius: 6px !important;
+}
+.error:not(input) {
+    color: red;
+    margin-top: 5px;
+}
+
+.text-error:not(input) {
+    color: red;
+    size: 20px;;
+}
+
+.text-success:not(input) {
+    color: green;
+    size: 20px;;
+}
+
+.di__time--hover {
+    padding: 12px 13px 12px 7px !important;
+}
+
+@media (min-width: 1441px){
+    .di__fee_structure .form-label, .di__fee_structure .form-check-label {
+        font-size: 10px !important;
+    }
+    .di__fee_structure .di__liv-in {
+        flex: 0 0 200px;
+    }
+}
+@media (max-width: 1280px){
+    .di__bg_section{
+        padding: 50px 30px
+    }
+}
+@media (max-width: 767px){
+    .di__carehome{
+        padding: 15px 20px
+    }
+}

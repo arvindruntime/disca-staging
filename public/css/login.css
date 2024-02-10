@@ -1,0 +1,49 @@
+.di__login_container {
+    max-width: 775px;
+    margin-top: 40px;
+}
+.di__login-card {
+    border-radius: 20px;
+    background: #FFF;
+    box-shadow: 10px 10px 36px 0px rgba(0, 10, 60, 0.08);
+    padding: max(25px, 2.8vw) max(25px, 8.15vw);
+    margin-top: 60px;
+}
+.di__seperator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: #C1C2C3;
+    margin: 20px 0;
+}
+
+.di__seperator:before, .di__seperator:after {
+    content: '';
+    height: 1px;
+    width: 100%;
+    background-color: #C1C2C3;
+}
+
+.di__forget-card{
+    margin-top: 160px;
+}
+
+.di__otp {
+    background-color: #F9FAFC;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 440px
+}
+
+.di__otp .form-control {
+    background-color: #F2F2F2;
+    box-shadow: none;
+    border-radius: 10px;
+}
+
+@media (max-width: 767px){
+    .di__forget-card{
+        margin-top: 60px;
+    }
+}

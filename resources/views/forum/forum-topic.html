@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="X-UA-Compatible" content="IE=7">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DISCA</title>
+  <link rel="shortcut icon" href="../images/icon/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="../images/icon/apple-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Kalam:wght@300;400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css" />
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/select2-bootstrap-5-theme@1.3.0/dist/select2-bootstrap-5-theme.min.css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/dataTables.bootstrap5.min.css">
+
+  <link rel="stylesheet" href="https://unpkg.com/dropzone@5/dist/min/dropzone.min.css" type="text/css" />
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/dashboard.css">
+  
+</head>
+
+<body>
+
+  <main class="main-content" id="main">
+    <div class="di__dashboard di__forum_dashboard d-flex">
+      <aside class="p-3 bg-white di__dashboard-sidebar min-vh-100">
+        <div class="d-flex align-items-center di__user di__user_status di__user_status--live">
+          <a href="#" class="d-block">
+            <div class="d-flex align-items-center text-decoration-none ms-3 ">
+              <div class="img-wrapper me-2">
+                <img src="../images/icon/user_img.png" alt="" width="55" height="55" class="rounded-circle bg-primary">
+              </div>
+              <p class="mb-0 tertiary-color">
+                <strong>David John</strong>
+              </p>
+            </div>
+          </a>
+        </div>
+        <ul class="nav nav-pills flex-column mt-3 px-1">
+          <li class="nav-item">
+            <a href="chat.html" class="nav-link text-xs fw-medium tertiary-color mb-1" aria-current="page">
+              Live Chat
+            </a>
+          </li>
+          <li class="inner-dropdown">
+            <a href="discussion.html" class="nav-link text-xs fw-medium tertiary-color mb-1 active">
+              Discussion Board  
+            </a>
+            <span class="d-inline-block dropdown-arrow"><img src="../images/icon/right-arrow.svg" alt="" class="in-svg"></span>
+            <ul class="ps-4">
+              <li>
+                <a href="#" class="nav-link text-xs fw-medium tertiary-color mb-1">
+                  General Update Board
+                </a>
+              </li>
+              <li>
+                <a href="#" class="nav-link text-xs fw-medium tertiary-color mb-1">
+                  Training Chatters
+                </a>  
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="forum-add-topic.html" class="nav-link text-xs fw-medium tertiary-color mb-1">
+              Add new topic
+            </a>
+          </li>
+        </ul>
+        <hr class="bg-grey opacity-100">
+        <ul class="nav nav-pills flex-column mt-4 px-1">
+          <li class="nav-item">
+            <p class="primary-color text-xs fw-medium mb-3 ms-2 ps-1">
+              Topics Following
+            </p>
+          </li>
+          
+          <li>
+            <a href="#" class="nav-link text-xs fw-medium tertiary-color mb-1">
+              Topic Name
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link text-xs fw-medium tertiary-color mb-1">
+              Topic Name
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link text-xs fw-medium tertiary-color mb-1">
+              Topic Name
+            </a>
+          </li>
+        </ul>
+        <hr class="bg-grey opacity-100">
+        <div class="d-flex align-items-center justify-content-center gap-3 mt-3">
+          <a href="" class="btn di__sidebar-btn text-xs fw-medium lh-base">Logout</a>
+          <a href="" class="btn di__sidebar-btn text-xs fw-medium lh-base"><img src="../images/icon/border-user.svg"
+              alt="" height="15" width="15" class="me-1">Account</a>
+
+        </div>
+      </aside>
+      <div class="di__dashboard-content flex-grow-1">
+        <div class="di__header">
+          <div class="di__toogle-sidebar d-lg-none">
+            <p class="text-small mb-0 text-white fw-medium">MENU</p>
+          </div>
+          <div class="di__dashboard_search d-none d-lg-block">
+            <input class="form-control" id="di-search" type="search" aria-label="Search" placeholder="Search">
+          </div>
+          <div class="di__dashboard_logo">
+            <img src="../images/Logo.svg" alt="" width="156">
+          </div>
+          <div class="d-flex align-items-center gap-3">
+            <div class="position-relative">
+              <div class="p-2 rounded rounded-circle bg-opacity-75 bg-light cursor-pointer di-search_icon d-lg-none">
+                <img src="../images/icon/search.svg" alt="">
+              </div>
+              <div class="di__dashboard_search di__dashboard_search--mobile d-none">
+                <input class="form-control" id="di-search" type="search" aria-label="Search" placeholder="Search">
+              </div>
+            </div>
+            <div class="di__notification di__notification--new">
+              <img src="../images/icon/Notification.svg" alt="" class="cursor-pointer">
+              <div class="di__notification_pannel">
+                <div class="di__notification_heder d-flex align-items-end justify-content-between">
+                  <p class="text-md mb-0 flex-grow-1">Notification</p>
+                  <div class="close me-2"><img src="../images/icon/close.svg" alt=""></div>
+                </div>
+                <div class="di__notification_content">
+                  <div class="di__notification_message di__notification_message--new d-flex align-items-center">
+                    <div class="di__notification_image me-3 w-auto">
+                      <img src="../images/icon/user_img.png" alt="" width="48" height="48"
+                        class="rounded-circle bg-primary">
+                    </div>
+                    <div class="flex-grow-1">
+                      <p class="di__notification_text mb-0">
+                        <strong class="fw-smedium">Tom Jones</strong> reply to your comment
+                      </p>
+                      <span class="di__notification_time d-block">
+                        3 min ago
+                      </span>
+                    </div>
+                  </div>
+                  <div class="di__notification_message d-flex align-items-center">
+                    <div class="di__notification_image me-3 w-auto">
+                      <img src="../images/icon/user_img.png" alt="" width="48" height="48"
+                        class="rounded-circle bg-primary">
+                    </div>
+                    <div class="flex-grow-1">
+                      <p class="di__notification_text mb-0">
+                        <strong class="fw-smedium">Tom Jones</strong> reply to your comment reply to your comment
+                      </p>
+                      <span class="di__notification_time d-block">
+                        3 min ago
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="di__dashboard_main mt-5 pt-3">
+          <div class="row">
+            <div class="col-12">
+              <div class="mb-5">
+                <h4 class="primary-color">
+                  This a an open forum for general updates from the Care System.
+                </h4>
+                <p class="color-text text fw-medium d-inline-block mb-0"> 
+                    General Update Board | 30 Jan, 2023 |
+                  <span class="primary-color fw-smedium d-inline-block">
+                    By David John
+                  </span>
+                </p>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="di__open-forum align-items-lg-start d-flex gap-3 gap-lg-5 flex-wrap flex-lg-nowrap ">
+                <div class="di__forum-message di__forum-bg">
+                  <p class="h7 tertiary-color fw-smedium">
+                    Hi All,
+                  </p>
+                  <p class="color-text">
+                    This is a quick welcome to the 9 new managers who have registered with our Peer to Peer support group in Devon, Those of you who are new please do now login with the email address and password that you registered with.
+                  </p>
+                  <p class="color-text">
+                    This group is here to provider support to the care sector and we have training providers, HR advisers, insurance advisers in addition to each other to ensure the best advice can be found.
+                  </p>
+                  <p class="color-text">
+                    We have this portal that is driven by topics that you can start or follow and we have what's app groups should you wish to be added.
+                  </p>
+                  <p class="color-text">
+                    I look forward to work with you all.
+                  </p>
+                  <p class="primary-color fst-italic fw-medium h7">
+                    John Tomes
+                  </p>
+                  <div class="text-end">
+                    <a href="" class="primary-color d-inline-flex text-md align-items-center fw-smedium"><span class="di__clip me-2"><img src="../images/icon/clip.svg" alt="" class="in-svg"></span>Show Attachment</a>
+                  </div>
+                </div>
+                <div class="di__verticle_stats di__forum-bg">
+                  <div class="d-flex align-items-center">
+                    <div class="di__stats_img">
+                      <img src="../images/icon/user_img.png" alt="" class="tertiary-bg rounded-circle" width="97" height="97">
+                    </div>
+                    <div class="ms-3">
+                      <h6 class="mb-0 primary-color fw-smedium">
+                        David John
+                      </h6>
+                      <p class="mb-0 color-text">
+                        (@username)
+                      </p>
+                    </div>
+                  </div>
+                  <div class="">
+                    <a href="" class="btn text-md w-100 fw-medium lh-base my-4">Follow This Topic</a>
+                  </div>
+                  <div class="di_discussion_stats mt-4">
+                    <div class="row">
+                      <div class="col-6">
+                        <p class="tertiary-color d-inline-flex align-items-center fw-medium"><span class="me-2 di__forum-icon"><img src="../images/icon/message.svg" alt=""></span>Topics:</p>
+                      </div>
+                      <div class="col-6">
+                        <p class="text-end color-text">37</p>
+                      </div>
+                      <div class="col-6">
+                        <p class="tertiary-color d-inline-flex align-items-center fw-medium"><span class="me-2 di__forum-icon"><img src="../images/icon/group.svg" alt=""></span>Replies:</p>
+                      </div>
+                      <div class="col-6">
+                        <p class="text-end color-text">70</p>
+                      </div>
+                      <div class="col-6">
+                        <p class="tertiary-color d-inline-flex align-items-center fw-medium"><span class="me-2 di__forum-icon"><img src="../images/icon/time.svg" alt=""></span>Freshness:</p>
+                      </div>
+                      <div class="col-6">
+                        <p class="text-end color-text">30 Jan,2023</p>
+                      </div>
+                      <div class="col-6">
+                        <p class="tertiary-color d-inline-flex align-items-center fw-medium"><span class="me-2 di__forum-icon"><img src="../images/icon/add-people.svg" alt=""></span>Voices:</p>
+                      </div>
+                      <div class="col-6">
+                        <p class="text-end color-text">23</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="di__option_block di__comment_block di__forum-bg mt-3 mt-lg-5">
+                <h5 class="fw-bold primary-color">Topic Discussion</h5>
+                <div class="di__comment_reply">
+                  <ol class="comments">
+                    <li>
+                      <article class="comment">
+                        <aside class="avatar">
+                          <img src="../images/comment.png" alt="" height="58" width="58">
+                          <div class="d-flex justify-content-between pt-0 pt-md-3 align-items-center flex-wrap">
+                            <p class="mb-0 name tertiary-color fw-smedium">Alina Jacob<span class="primary-color text-xs fw-normal ms-1">(@username)</span></p>
+                            <p class="mb-0 di__comment_time">14:30 | 30 Jan, 2023</p>
+                          </div>
+                        </aside>
+                        <div class="d-flex flex-column gap-2">
+                          <div class="d-flex gap-3 gap-md-4 align-items-center">
+                            <div class="comment-content">
+                              <p class="tertiary-color text-xs mb-0">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                              </p>
+                            </div>
+                            <div class="btn-group di__option_block">
+                              <a href="javascript:void(0)" class="dropdown-toggle" type="button" id="defaultDropdown" data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">
+                                <img src="../images/icon/options.svg" alt="" class="in-svg">
+                              </a>
+                              <ul class="dropdown-menu border-0 mt-3" aria-labelledby="defaultDropdown">
+                                <li class="p-0"><a class="dropdown-item d-inline-flex align-items-center gap-2 text-tiny py-2" href="#"><span><img src="../images/icon/edit-comment.svg" alt="" class="in-svg"></span>Edit</a></li>
+                                <li class="p-0"><a class="dropdown-item d-inline-flex align-items-center gap-2 text-tiny py-2" href="#"><span><img src="../images/icon/delete.svg" alt="" class="in-svg"></span>Delete</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="d-flex align-items-center gap-3 mt-1 flex-wrap">
+                            <a href="" class="d-flex">
+                              <img src="../images/icon/reply.svg" alt="">
+                              <p class="ms-1 mb-0 text-xs me-0 di__count">Replies <span class="ms-1">(7)</span></p>
+                            </a>
+                            <a href="" class="d-flex">
+                              <img src="../images/icon/like.svg" alt="">
+                              <p class="ms-1 mb-0 text-xs me-0 di__count">Helpful <span class="ms-1">(10)</span></p>
+                            </a>
+                          </div>
+                        </div>
+                      </article>
+                    </li>
+                    <li class="has-replies">
+                      <article class="comment">
+                        <aside class="avatar">
+                          <img src="../images/comment.png" alt="" height="58" width="58">
+                          <div class="d-flex justify-content-between pt-0 pt-md-3 align-items-center flex-wrap">
+                            <p class="mb-0 name tertiary-color fw-smedium">Alina Jacob<span class="primary-color text-xs fw-normal ms-1">(@username)</span></p>
+                            <p class="mb-0 di__comment_time">14:30 | 30 Jan, 2023</p>
+                          </div>
+                        </aside>
+                        <div class="d-flex flex-column gap-2">
+                          <div class="d-flex gap-3 gap-md-4 align-items-center">
+                            <div class="comment-content">
+                              <p class="tertiary-color text-xs mb-0">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                              </p>
+                            </div>
+                            <div class="btn-group di__option_block">
+                              <a href="javascript:void(0)" class="dropdown-toggle" type="button" id="defaultDropdown" data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">
+                                <img src="../images/icon/options.svg" alt="" class="in-svg">
+                              </a>
+                              <ul class="dropdown-menu border-0 mt-3" aria-labelledby="defaultDropdown">
+                                <li class="p-0"><a class="dropdown-item d-inline-flex align-items-center gap-2 text-tiny py-2" href="#"><span><img src="../images/icon/edit-comment.svg" alt="" class="in-svg"></span>Edit</a></li>
+                                <li class="p-0"><a class="dropdown-item d-inline-flex align-items-center gap-2 text-tiny py-2" href="#"><span><img src="../images/icon/delete.svg" alt="" class="in-svg"></span>Delete</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="d-flex align-items-center gap-3 mt-1 flex-wrap">
+                            <a href="" class="d-flex">
+                              <img src="../images/icon/reply.svg" alt="">
+                              <p class="ms-1 mb-0 text-xs me-0 di__count">Replies <span class="ms-1">(7)</span></p>
+                            </a>
+                            <a href="" class="d-flex">
+                              <img src="../images/icon/like.svg" alt="">
+                              <p class="ms-1 mb-0 text-xs me-0 di__count">Helpful <span class="ms-1">(10)</span></p>
+                            </a>
+                          </div>
+                        </div>
+                      </article>
+                      <ol class="replies">
+                        <li>
+                          <article class="comment">
+                            <aside class="avatar">
+                              <img src="../images/comment.png" alt="" height="58" width="58">
+                              <div class="d-flex justify-content-between pt-0 pt-md-3 align-items-center flex-wrap">
+                                <p class="mb-0 name tertiary-color fw-smedium">Alina Jacob<span class="primary-color text-xs fw-normal ms-1">(@username)</span></p>
+                                <p class="mb-0 di__comment_time">14:30 | 30 Jan, 2023</p>
+                              </div>
+                            </aside>
+                            <div class="d-flex flex-column gap-2">
+                              <div class="d-flex gap-3 gap-md-4 align-items-center">
+                                <div class="comment-content">
+                                  <p class="tertiary-color text-xs mb-0">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                                  </p>
+                                </div>
+                                <div class="btn-group di__option_block">
+                                  <a href="javascript:void(0)" class="dropdown-toggle" type="button" id="defaultDropdown" data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">
+                                    <img src="../images/icon/options.svg" alt="" class="in-svg">
+                                  </a>
+                                  <ul class="dropdown-menu border-0 mt-3" aria-labelledby="defaultDropdown">
+                                    <li class="p-0"><a class="dropdown-item d-inline-flex align-items-center gap-2 text-tiny py-2" href="#"><span><img src="../images/icon/edit-comment.svg" alt="" class="in-svg"></span>Edit</a></li>
+                                    <li class="p-0"><a class="dropdown-item d-inline-flex align-items-center gap-2 text-tiny py-2" href="#"><span><img src="../images/icon/delete.svg" alt="" class="in-svg"></span>Delete</a></li>
+                                  </ul>
+                                </div>
+                              </div>
+                              <div class="d-flex align-items-center gap-3 mt-1 flex-wrap">
+                                <a href="" class="d-flex">
+                                  <img src="../images/icon/reply.svg" alt="">
+                                  <p class="ms-1 mb-0 text-xs me-0 di__count">Replies <span class="ms-1">(7)</span></p>
+                                </a>
+                                <a href="" class="d-flex">
+                                  <img src="../images/icon/like.svg" alt="">
+                                  <p class="ms-1 mb-0 text-xs me-0 di__count">Helpful <span class="ms-1">(10)</span></p>
+                                </a>
+                              </div>
+                            </div>
+                            
+                          </article>
+                          
+                        </li>
+                        <li>
+                          <article class="comment">
+                            <aside class="avatar">
+                              <img src="../images/comment.png" alt="" height="58" width="58">
+                              <div class="d-flex justify-content-between pt-0 pt-md-3 align-items-center flex-wrap">
+                                <p class="mb-0 name tertiary-color fw-smedium">Alina Jacob<span class="primary-color text-xs fw-normal ms-1">(@username)</span></p>
+                                <p class="mb-0 di__comment_time">14:30 | 30 Jan, 2023</p>
+                              </div>
+                            </aside>
+                            <div class="d-flex flex-column gap-2">
+                              <div class="d-flex gap-3 gap-md-4 align-items-center">
+                                <div class="comment-content">
+                                  <p class="tertiary-color text-xs mb-0">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                                  </p>
+                                </div>
+                                <div class="btn-group di__option_block">
+                                  <a href="javascript:void(0)" class="dropdown-toggle" type="button" id="defaultDropdown" data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">
+                                    <img src="../images/icon/options.svg" alt="" class="in-svg">
+                                  </a>
+                                  <ul class="dropdown-menu border-0 mt-3" aria-labelledby="defaultDropdown">
+                                    <li class="p-0"><a class="dropdown-item d-inline-flex align-items-center gap-2 text-tiny py-2" href="#"><span><img src="../images/icon/edit-comment.svg" alt="" class="in-svg"></span>Edit</a></li>
+                                    <li class="p-0"><a class="dropdown-item d-inline-flex align-items-center gap-2 text-tiny py-2" href="#"><span><img src="../images/icon/delete.svg" alt="" class="in-svg"></span>Delete</a></li>
+                                  </ul>
+                                </div>
+                              </div>
+                              <div class="d-flex align-items-center gap-3 mt-1 flex-wrap">
+                                <a href="" class="d-flex">
+                                  <img src="../images/icon/reply.svg" alt="">
+                                  <p class="ms-1 mb-0 text-xs me-0 di__count">Replies <span class="ms-1">(7)</span></p>
+                                </a>
+                                <a href="" class="d-flex">
+                                  <img src="../images/icon/like.svg" alt="">
+                                  <p class="ms-1 mb-0 text-xs me-0 di__count">Helpful <span class="ms-1">(10)</span></p>
+                                </a>
+                              </div>
+                            </div>
+                            
+                          </article>
+                        </li>
+                      </ol>
+                    </li>
+                  </ol>
+                </div>
+                <div class="mt-5">
+                  <h5 class="fw-bold">Leave a Reply</h5>
+                </div>
+                <div>
+                  <div class="di__editor">
+                    <div id="editor"></div>
+                  </div>
+                  <div class="mt-4 d-flex gap-3 flex-wrap">
+                    <span class="primary-color btn btn-bordered d-inline-flex text-md align-items-center fw-smedium position-relative"><input type="file" class="w-100 opacity-0 z-1 h-100 position-absolute"><span class="di__clip me-2"><img src="../images/icon/clip.svg" alt="" class="in-svg"></span>Attach File</span>
+                    <a href="" class="btn text-md fw-smedium">Send Reply</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+  <script src="https://cdn.datatables.net/1.13.6/js/dataTables.bootstrap5.min.js"></script>
+  <script src="https://unpkg.com/dropzone@5/dist/min/dropzone.min.js"></script>
+  <script src="https://cdn.ckeditor.com/ckeditor5/40.0.0/classic/ckeditor.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+
+</html>
